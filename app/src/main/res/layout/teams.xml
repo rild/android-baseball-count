@@ -19,8 +19,9 @@
 
         <TextView
             android:id="@+id/text_team_point_a"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="1"
             android:textSize="48sp" />
 
@@ -41,8 +42,9 @@
 
         <TextView
             android:id="@+id/text_team_point_b"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="4"
             android:textSize="48sp" />
 

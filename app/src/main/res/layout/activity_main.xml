@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="4dp"
+    android:background="#7A7D7D"
     tools:context="rimp.rild.com.android.android_baseball_count.MainActivity">
 
     <include layout="@layout/teams"/>
@@ -43,41 +44,6 @@
     </LinearLayout>
 
     <include layout="@layout/baseball_count"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#7A7D7D"
-        android:gravity="right">
-
-        <TextView
-            android:id="@+id/text_hit_count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1"
-            android:textColor="#FFFBFE"
-            android:textSize="18sp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="塁打"
-            android:textColor="#FFFBFE"
-            android:textSize="18sp"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="確定"/>
-
-    </LinearLayout>
 
 
 

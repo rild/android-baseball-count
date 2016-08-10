@@ -2,18 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:padding="8dp"
     android:background="#FFFBFE">
 
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="0dp"
+        android:orientation="vertical"
         android:gravity="center_horizontal|bottom"
         android:layout_height="match_parent">
-        <TextView
+
+        <ImageView
+            android:id="@+id/button_2_to_3"
+            android:layout_margin="12dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_2_to_3"/>
+        <ToggleButton
+            android:id="@+id/third_base"
             android:layout_width="96dp"
             android:layout_height="96dp"
-            android:background="#C2E1C2"
-            android:text="三塁"/>
+            android:background="@drawable/base_background"
+            android:textOn="三塁"
+            android:textOff="三塁"/>
+        <ImageView
+            android:id="@+id/button_3_to_home"
+            android:layout_margin="12dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_file_download"/>
     </LinearLayout>
 
     <LinearLayout
@@ -21,23 +42,43 @@
         android:layout_width="0dp"
         android:gravity="center_horizontal"
         android:layout_height="match_parent">
-        <TextView
+        <ToggleButton
+            android:id="@+id/second_base"
             android:layout_width="96dp"
             android:layout_height="96dp"
-            android:background="#C2E1C2"
-            android:text="二塁"/>
+            android:background="@drawable/base_background"
+            android:textOn="二塁"
+            android:textOff="二塁"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="0dp"
         android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
         android:layout_height="match_parent">
-        <TextView
+        <ImageView
+            android:id="@+id/button_1_to_2"
+            android:layout_margin="12dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_reply"/>
+        <ToggleButton
+            android:id="@+id/first_base"
             android:layout_width="96dp"
             android:layout_height="96dp"
-            android:background="#66A182"
-            android:text="一塁"/>
+            android:background="@drawable/base_background"
+            android:textOn="一塁"
+            android:textOff="一塁"/>
+        <ImageView
+            android:id="@+id/button_home_to_1"
+            android:layout_margin="12dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_file_upload"/>
+
     </LinearLayout>
 
 </LinearLayout>
