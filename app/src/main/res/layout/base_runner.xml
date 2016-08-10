@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBFE">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center_horizontal|bottom"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="#C2E1C2"
+            android:text="三塁"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="#C2E1C2"
+            android:text="二塁"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center_horizontal|bottom"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="#66A182"
+            android:text="一塁"/>
+    </LinearLayout>
+
+</LinearLayout>
