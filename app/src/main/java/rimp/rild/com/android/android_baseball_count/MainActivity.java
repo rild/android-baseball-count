@@ -12,6 +12,13 @@ public class MainActivity extends AppCompatActivity {
     int ball;
     int out;
 
+    int inningNumber2;
+    int inningNumber;
+    String inningString = "";
+
+    TextView inningNumberTextView;
+    TextView inningTextView;
+
     TextView strikeTextView;
     TextView ballTextView;
     TextView outTextView;
@@ -39,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         strikeButton = (Button) findViewById(R.id.button_strike);
         ballButton = (Button) findViewById(R.id.button_ball);
         outButton = (Button) findViewById(R.id.button_out);
+        inningNumberTextView = (TextView) findViewById(R.id.text_inning_number);
+        inningTextView = (TextView) findViewById(R.id.text_top_and_bottom);
     }
 
     private void setOnClickToButtons() {
@@ -79,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             ball++;
         } else {
             ball = 0;
+            strike = 0;
         }
     }
 
@@ -87,6 +97,21 @@ public class MainActivity extends AppCompatActivity {
             out++;
         } else {
             out = 0;
+            plusInning();
+        }
+    }
+
+    private void plusInning() {
+        inningNumber2++;
+        updateInning();
+    }
+
+    private void updateInning() {
+        inningNumber = inningNumber2 / 2 + 1;
+        if (inningNumber2 % 2 == 0) {
+            inningString = "表";
+        } else {
+            inningString = "裏";
         }
     }
 
@@ -94,9 +119,16 @@ public class MainActivity extends AppCompatActivity {
         strikeTextView.setText(String.valueOf(strike));
         ballTextView.setText(String.valueOf(ball));
         outTextView.setText(String.valueOf(out));
+        inningNumberTextView.setText(String.valueOf(inningNumber));
+        inningTextView.setText(inningString);
     }
 
     private void resetValues() {
+        inningNumber2 = 0;
+        inningNumber = 1;
+
+        inningString = "表";
+
         strike = 0;
         ball = 0;
         out = 0;
